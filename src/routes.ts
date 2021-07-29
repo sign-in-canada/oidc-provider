@@ -110,7 +110,6 @@ export const routes = (app, provider) => {
           prompt: { name },
         } = await provider.interactionDetails(req, res);
         assert.equal(name, "login");
-        console.log("a", Account);
 
         const account = await Account.findByLogin(req.body.login);
 

@@ -86,7 +86,6 @@ class Account {
     // ctx is the request context
     
     if (!store.get(id)) new Account(id); // eslint-disable-line no-new
-    console.log('ctx', ctx, 'id', id, 'token', token, 'acc', store.get(id));
     return store.get(id);
   }
 }
